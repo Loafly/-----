@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 트리의_부모_찾기 {
     static List<List<Integer>> graph;
     static int[] visited;
 
