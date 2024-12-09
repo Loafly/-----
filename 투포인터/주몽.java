@@ -20,21 +20,21 @@ public class 주몽 {
         Arrays.sort(arrays);
 
         int answer = 0;
-        int s = 0;
-        int e = n - 1;
+        int start = 0;
+        int end = n - 1;
 
         // 투 포인터 알고리즘
-        while (s < e) {
-            int currentValue = arrays[s] + arrays[e];
+        while (start < end) {
+            int currentValue = arrays[start] + arrays[end];
 
             if (currentValue == m) {
-                s++;
-                e--;
+                start++;
+                end--;
                 answer++;
             } else if (currentValue > m) {
-                e--;
+                end--;
             } else { // currentValue < m
-                s++;
+                start++;
             }
         }
 
